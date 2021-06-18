@@ -4,9 +4,12 @@ from tkinter import tix
 from tkinter import messagebox
 from tkinter.tix import Balloon
 import csv
-import backend
+from ttkbootstrap import Style
 
-win=tix.Tk()
+import backend
+chumu=Style(theme='cyborg')
+# win=tix.Tk()
+win=chumu.master
 win.title('OOE Database')
 # win.geometry('1280x720')
 win.resizable(width=False,height=False)
@@ -305,14 +308,14 @@ menu.add_command(label="Exit",command=win.destroy)
 win.bind("<Button-3>",popup)
 
 # -------------------hover guide-------from tix module--------------------------
-tip= Balloon(win)
-tip.bind_widget(b,balloonmsg="Insert student info into the database")
-tip.bind_widget(b1,balloonmsg="Delete selected row")
-tip.bind_widget(b2,balloonmsg="clear all entry fields")
-tip.bind_widget(b3,balloonmsg="update info to the database")
-tip.bind_widget(b5,balloonmsg="Exit program")
-tip.bind_widget(b7,balloonmsg="Clean Table")
-tip.bind_widget(b4,balloonmsg="Show what's in the database")
+# tip= Balloon(win)
+# tip.bind_widget(b,balloonmsg="Insert student info into the database")
+# tip.bind_widget(b1,balloonmsg="Delete selected row")
+# tip.bind_widget(b2,balloonmsg="clear all entry fields")
+# tip.bind_widget(b3,balloonmsg="update info to the database")
+# tip.bind_widget(b5,balloonmsg="Exit program")
+# tip.bind_widget(b7,balloonmsg="Clean Table")
+# tip.bind_widget(b4,balloonmsg="Show what's in the database")
 
 # ------file menu---------------------------------------------------------
 
