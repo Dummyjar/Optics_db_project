@@ -75,4 +75,4 @@ def check():
     else:
         return True
 
-# print(find(sex='M'))
+print(show())
